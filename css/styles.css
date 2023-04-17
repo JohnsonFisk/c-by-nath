@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Lobster+Two&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Lobster+Two&family=Roboto:wght@100;300;400&family=Yeseva+One&display=swap');
+
+body {
+    margin: 0px;
+    background-image: url(../image/chloe-bolton2.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px; 
+}
+
+.body_1 {
+    background-image: url(/image/Background\ projet.jpg);
+    background-position-y: -143px;    
+}
+
+.body_3 {
+    background-image: url(/image/Background\ projet.jpg);
+    backdrop-filter: blur(5px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.page2 {
+    background: none;
+    background-size: 0px;
+    height: 0vh;
+}
+
+section.top_page {
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size:cover;
+    padding: 30px;
+    margin-bottom: 170px;
+}
+
+.top_page1 {
+    background: url(/image/Grand\ pot.png);
+}
+
+section.top_page2 {
+    padding: 30px;
+}
+
+.background {
+    background: url(../image/chloe-bolton2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0) 50%);
+}
+
+/* Logo */
+header.header {
+    display:flex ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+  
+  /* Ajouter un effet de survol */
+  .header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+header.header img {
+    display: block;
+    position: absolute;
+    width: 550px;
+    margin-top: 80px;
+}
+
+/* Menu de navigation */
+
+.categorie1 {
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-decoration: none;
+    color: #772F1A;
+}
+
+.categorie2 {
+    width: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    right: 40px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-decoration: none;
+    color: #772F1A;
+}
+
+.categorie1 li {
+    color:#772F1A;
+    list-style: none
+}
+.categorie2 li {
+    color:#772F1A;
+    list-style: none
+}
+
+.landing_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Yeseva One";
+    font-size: 50px;
+    font-weight: 100;
+    color:#772F1A ;
+    margin-top: 75px;
+    animation: apparition 1.2s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.landing_page2 {
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-size: 26px;
+    justify-content: center;
+    color:#772F1A ;
+    margin-top: -50px;
+    transform: translateY(120px);
+    position: relative;
+    overflow: hidden;
+    animation: 1.2s titleAnimation cubic-bezier(0, 0.55, 0.45, 1) forwards;
+}
+
+.h3 {
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.mdc {
+    font-weight: 400;
+}
+@keyframes titleAnimation {
+    to {
+        transform: initial;
+    }
+}
+
+.scroll_down {
+    position: absolute;
+    bottom: 50px;
+    left: 140px;
+    font-size: large;
+    color:#772F1A;
+    font-size: 50px;
+    overflow: hidden;
+    transform: translateY(120px);
+    animation: 1.2s Animation cubic-bezier(0, 0.55, 0.45, 1) forwards;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.scroll_down:hover {
+    transform: translateY(-5px);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes Animation {
+    to {
+        transform: initial;
+    }
+}
+
+@keyframes Animation {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+/* Seconde parti de page */
+
+.mes_dernieres_creations {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color:#772F1A;
+}
+
+.nouvelle_collection {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color:#772F1A;
+}
+
+/* Fond de la section des pots */
+
+.photos_pots_complet {
+    background-color: white;
+}
+
+.photos_pots {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.pot_1 {
+    background-image: url(/image/pot1.png);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.pot_2 {
+    background-image: url(/image/pot2.png);
+    background-size: cover;
+    background-position: 80%;
+}
+
+.pot_3 {
+    background-image: url(/image/pot\ 3.png);
+    background-size: cover;
+}
+
+.pot_4 {
+    background-image: url(/image/pot\ 4.png);
+    background-size: cover;
+    
+}
+
+.pot_5 {
+    background-image: url(/image/pot\ 5.png);
+    background-size: cover;
+    background-position: 88%;
+}
+
+.pot_6 {
+    background-image: url(/image/pot\ 6.png);
+    background-size: cover;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+    font-family: "Roboto";
+    text-decoration:none;
+}
+
+/* PAGE MENTIONS LEGALES */
+
+.legale {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    color:#000000 ;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    transform: translateY(120px);
+    position: relative;
+    overflow: hidden;
+    animation: 1.2s titleAnimation cubic-bezier(0, 0.55, 0.45, 1) forwards;
+    margin-left: 500px;
+}
+
+@keyframes titleAnimation {
+    to {
+        transform: initial;
+    }
+}
+
+.landing_mpc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Yeseva One";
+    font-size: 50px;
+    font-weight: 100;
+    color:#772F1A ;
+    margin-top: 200px;
+    animation: apparition 1.2s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.mentions {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color:#772F1A;
+}
+
+.politique {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: #772F1A;
+}
+
+.parametre {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: #772F1A;
+}
+
+.slide-line {
+    text-decoration: none;
+    color:  #772F1A;
+    position: relative;
+    
+  }
+  .slide-line::before {
+    content: "";
+    position: absolute;
+    background:  #772F1A;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+  
+  .slide-line:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+.button-en-savoir-plus {
+    display: inline-block;
+    position: relative;
+    font-size: 23px;
+    font-family: "Roboto";
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 48px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: #772F1A;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-out;
+    margin-left: 85%;
+    margin-top: 20%;
+  }
+  
+  .button-en-savoir-plus:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.3);
+  }
+  
+  .button-en-savoir-plus span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .button-en-savoir-plus svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    fill: #772F1A;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+/* Mon Projet */
+
+.landing_projet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Yeseva One";
+    font-size: 80px;
+    font-weight: 100;
+    color:#772F1A ;
+    margin-top: 100px;
+    animation: apparition 1.2s ease-out;
+    margin-bottom: 40px;
+}
+
+.ceramique{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px;
+    text-align: center;
+    margin: 10px;
+    color: #772F1A;
+}
+
+.box_1 {
+    border: 0px solid rgb(255, 255, 255);
+    width: 500px;
+    font-family: "Yeseva One";
+    font-size: 40px;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.box_1:hover {
+    transform: translateY(-5px);
+    box-shadow: -30px 35px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.box_1 p {
+    font-size: 24px;
+    text-align: justify;
+    font-weight: 300;
+    font-family: "Roboto";
+    
+}
+
+.box_2 {
+    border: 0px solid rgb(255, 255, 255);
+    width: 500px;
+    font-family: "Yeseva One";
+    font-size: 45px;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 11px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.box_2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box_2 p {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 60px;
+    font-family: "Roboto";
+}
+
+.box_3 {
+    border: 0px solid rgb(255, 255, 255);
+    width: 500px;
+    font-family: "Yeseva One";
+    font-size: 45px;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 11px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.box_3:hover {
+    transform: translateY(-5px);
+    box-shadow: 30px 35px 10px rgba(0,0,0,0.3);
+}
+
+.box_3 p {
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 60px;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+
+.ma_signature {
+margin-top: 100px;
+}
+
+.signature {
+    position: absolute;
+    font-size: 50px;
+    font-family: "Yeseva One";
+    font-weight: 300;
+    color: #772F1A;
+    margin-left: 950px;
+    margin-top: 30px;
+}
+
+.signature_photo {
+    display:flex;
+    justify-content: flex-end;
+    width: auto;
+    height: 80vh;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 130px;
+    margin-top: -30px;
+    z-index: 1;
+    position: relative;
+    box-shadow: -55px 35px 1px #772F1A;
+    margin-bottom: 80px;
+}
+
+.signature_texte {
+    position: absolute;
+    font-family: "Roboto";
+    font-size: 25px;
+    color: #772F1A;
+    font-weight: 500;
+    width: 830px;
+    margin-left: 950px;
+    margin-top: 160px;
+}
+
+
+/* GALERIE PHOTOS */
+
+.grand_pot {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: -60px;
+    margin-bottom: 0px;
+}
+
+.header1 img {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    width: 800px;
+}
+
+.categorie_galerie {
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 160px;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-decoration: none;
+    color: #772F1A;
+}
+
+.categorie_galerie_2 {
+    width: 310px;
+    margin-left: 480px;
+    margin-top: 160px;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-decoration: none;
+    color: #772F1A;
+}
+
+.landing_page_création {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 320px;
+    margin-left: 50px;
+    font-family: "Roboto";
+    font-size: 50px;
+    color: #772F1A;
+}
+
+.landing_page_création1 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 480px;
+    margin-left: 50px;
+    font-family: "Roboto";
+    font-size: 25px;
+    color: #772F1A;
+    font-weight: 500;
+}
+
+.landing_page_création2 {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    margin-top: 520px;
+    margin-left: 50px;
+    font-family: "Roboto";
+    font-size: 25px;
+    color: #772F1A;
+    font-weight: 500;
+    width: 830px;
+}
+.galerie_photo {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: 450px 450px 450px;
+    gap: 35px;
+    justify-content: center;
+    background-color: #D5CABD;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.galerie_photo img {
+    width: 450px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galerie_photo img:hover {
+    transform: scale(1.1);
+}
+
+/* Contacte */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+    margin-top: -900px;
+    border: none;
+    font-family: "Roboto";
+    font-size: 35px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 3px solid #772F1A;
+    border-radius: 35px;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #772F1A;
+    font-family: "Roboto";
+}
+
+input [type='submit'] {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    border: none;
+    background-color:#772F1A ;
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.formulaire {
+    margin-top: 200px;
+}
+
+.submit {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight:500;
+    width: 95%;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.submit:hover {
+    transform: translateY(-5px);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
