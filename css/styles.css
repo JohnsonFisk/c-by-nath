@@ -10,12 +10,12 @@ body {
 }
 
 .body_1 {
-    background-image: url(/image/Background\ projet.jpg);
+    background-image: url(../image/Background\ projet.jpg);
     background-position-y: -143px;    
 }
 
 .body_3 {
-    background-image: url(/image/Background\ projet.jpg);
+    background-image: url(../image/Background\ projet.jpg);
     backdrop-filter: blur(5px);
 }
 
@@ -38,7 +38,7 @@ section.top_page {
 }
 
 .top_page1 {
-    background: url(/image/Grand\ pot.png);
+    background: url(../image/Grand\ pot.png);
 }
 
 section.top_page2 {
@@ -239,36 +239,36 @@ header.header img {
 }
 
 .pot_1 {
-    background-image: url(/image/pot1.png);
+    background-image: url(../image/pot1.png);
     background-size: cover;
     background-position: 100%;
 }
 
 .pot_2 {
-    background-image: url(/image/pot2.png);
+    background-image: url(../image/pot2.png);
     background-size: cover;
     background-position: 80%;
 }
 
 .pot_3 {
-    background-image: url(/image/pot\ 3.png);
+    background-image: url(../image/pot\ 3.png);
     background-size: cover;
 }
 
 .pot_4 {
-    background-image: url(/image/pot\ 4.png);
+    background-image: url(../image/pot\ 4.png);
     background-size: cover;
     
 }
 
 .pot_5 {
-    background-image: url(/image/pot\ 5.png);
+    background-image: url(../image/pot\ 5.png);
     background-size: cover;
     background-position: 88%;
 }
 
 .pot_6 {
-    background-image: url(/image/pot\ 6.png);
+    background-image: url(../image/pot\ 6.png);
     background-size: cover;
 }
 
